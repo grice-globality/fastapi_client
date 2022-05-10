@@ -54,10 +54,11 @@ main() {
     add_auth_files "$WORK_DIR"
   fi
   fill_import_name_templates "$WORK_DIR"
-
-  ./scripts/util/postprocess.sh -p "${PACKAGE_NAME}" -w "$WORK_DIR"
-  clean_openapi_generator_output "$WORK_DIR"
-  move_generated_output "$WORK_DIR"
+  echo "Skipping postprocessing command"
+  # ./scripts/util/postprocess.sh -p "${PACKAGE_NAME}" -w "$WORK_DIR"
+  echo "Running clean command"
+  # clean_openapi_generator_output "$WORK_DIR"
+  # move_generated_output "$WORK_DIR"
   echo "Generation succeeded 🚀"
 }
 
