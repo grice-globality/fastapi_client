@@ -155,8 +155,8 @@ add_extra_python_template() {
 
 fill_import_name_template() {
   python_filename="$1"
-  sed -i.bak "s/@IMPORT_NAME@/${IMPORT_NAME}/" "$python_filename"
-  rm "$python_filename".bak
+  #sed -i.bak "s/@IMPORT_NAME@/${IMPORT_NAME}/" "$python_filename"
+  #rm "$python_filename".bak
 }
 
 while [ $# -gt 0 ]; do
