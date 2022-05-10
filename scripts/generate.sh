@@ -124,8 +124,8 @@ fill_import_name_templates() {
 
 clean_openapi_generator_output() {
   WORK_DIR=$1
-  rm -r "$WORK_DIR"/.openapi-generator
-  rm "$WORK_DIR"/.openapi-generator-ignore
+  #rm -r "$WORK_DIR"/.openapi-generator
+  #rm "$WORK_DIR"/.openapi-generator-ignore
 }
 
 move_generated_output() {
